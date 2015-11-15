@@ -3,7 +3,7 @@
 <div class="main-container">
 	{% if not request.user.is_authenticated %}
 	<div class="page-header">
-		<h3>Welcome to the "TechSoc Membership Checker"</h3>
+		<h3>TechSoc Membership Checker</h3>
 	</div>
 
 
@@ -11,7 +11,7 @@
 	<p>(on mobile view, click the menu icon)</p>
 	{% else %}
 	<div class="page-header">
-		<h3 class="">Membership Form</h3>
+		<h3 class="">Membership Check</h3>
         <p> Insert the first name of the person here, as instructed beforehand...^^</p>
 	</div>
     <!--<form method="POST" action="/checkin">-->
@@ -29,9 +29,6 @@
         DENIED!
     </div>
     <script>
-
-
-
     $('#submit').click(function(){
         $('#accepted').css('visibility','hidden');
         $('#denied').css('visibility','hidden');
